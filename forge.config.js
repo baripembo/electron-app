@@ -27,4 +27,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'baripembo',
+          name: 'electron-app'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };
